@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const session = require('express-session');
+const session = require('express-session'); 
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const dotenv = require('dotenv');
@@ -31,15 +31,15 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'bower_components')));
 
-/* app.use(session({
-  secret: process.env.SESSION_SECRET_KEY,
+ app.use(session({
+  secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true,
-  cookie: { maxAge: 14 * 24 * 3600000 }
-})); */
+  cookie: { secure: true }
+})); 
 
 app.use(passport.initialize());
-
+app.use(passport.session());
 
 app.use('/', indexRouter);
 app.use('/auth', auth);
