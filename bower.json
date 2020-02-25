@@ -1,0 +1,17 @@
+{
+  "name": "chatty",
+  "description": "",
+  "main": "",
+  "authors": [
+    "hkayaoguzhan <oguzhanharmankayaa@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chat",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/hkayaoguzhan/chatty",
+  "dependencies": {
+    "angular": "^1.7.9"
+  }
+}
