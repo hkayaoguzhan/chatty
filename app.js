@@ -35,7 +35,7 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
   secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: true }
+  cookie: { secure: true}
 })); 
 
 app.use(passport.initialize());

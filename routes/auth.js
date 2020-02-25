@@ -8,7 +8,6 @@ router.get('/google', passportGoogle.authenticate(
         scope: ['profile']
     }
 ));
-
 router.get('/google/callback', passportGoogle.authenticate(
     'google',
     {
