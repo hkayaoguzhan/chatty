@@ -1,4 +1,4 @@
-function isAuthenticated(req, res, next){
+/* function isAuthenticated(req, res, next){
     if(req.isAuthenticated()){
         next();
     }    
@@ -7,4 +7,4 @@ function isAuthenticated(req, res, next){
     }    
 }
 
-module.exports = isAuthenticated;  
+module.exports = isAuthenticated;   */
